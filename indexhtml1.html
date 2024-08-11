@@ -1,0 +1,179 @@
+<!-- Layout -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .contact-info, .skills, .education, .experience, .forms {
+            margin-top: 20px;
+        }
+        .contact-info h2, .skills h2, .education h2, .experience h2, .forms h2 {
+            margin-bottom: 10px;
+        }
+        .contact-info p, .skills ul li, .education ul li, .experience ul li {
+            margin-bottom: 5px;
+        }
+        .social-media a {
+            display: inline-block;
+            margin: 10px 5px;
+            text-decoration: none;
+            color: #0077b5; /* LinkedIn Blue */
+        }
+        form {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form div {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <!-- Short Bio -->
+    <h1>About Me</h1>
+    <p>
+
+        I'm Sebaks Seshothela, an aspiring software developer who is busy with 
+        a bootcamp at HyperionDev. I have been working as a high school teacher 
+        for the past 10 years. I got interested in tech after watching Tiktok 
+        videos and also finding out that it is scarce skill in South Africa. I am
+        life long who easily adapts to new environments
+
+    </p>
+    <p>
+
+        I am planning to use my tech skills in the education space to solve 
+        challenges that we encouter on a daily basis. Tech is easily scalable 
+        which will allow me to reach learners across South Africa.
+
+    </p>
+    <p>
+        I am very active on Tiktok with about 10k followers across my three 
+        accouts. The Tiktok platform allows me to meet learners and people in 
+        general from all spheres of life.
+        
+    </p>
+
+    <!-- contact details -->
+
+    <div class="contact-info">
+        <h2>Contact Details</h2>
+        <p><strong>Name:</strong> Sebaks Seshothela</p>
+        <p><strong>Contact Number:</strong> +27 362 4899</p>
+        <p><strong>Email Address:</strong> <a href="mailto:sebaks992@gmail.com">sebaks992@gmail.com</a></p>
+        <div class="social-media">
+            <a href="https://www.tiktok.com/mnronline" target="_blank">Tiktok</a>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="skills">
+        <h2>Skills and Competencies</h2>
+        <ul>
+            <li>Proficient in Python, SQL, SQLite, HTML and CSS</li>
+            <li>Strong communication skills</li>
+            <li>Strong presentation skills</li>
+            <li>Experience with sales and customer service</li>
+            <li>Effective problem-solving and debugging skills</li>
+        </ul>
+    </div>
+
+    <!-- Education -->
+    <div class="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Software Engineering Bootcamp</strong><br>
+                HyperionDev, March 2024 - September 2024<br>
+                Topics covered: Python Data Structures, Frameworks, Funnction and OOP.
+            </li>
+            <li>
+                <strong>Bachelor of Science Honours in Aquaculture</strong><br>
+                University of Limpopo, 2008 - 2009<br>
+                Relevant Coursework: Applying Statistical analysis in my research
+            </li>
+        </ul>
+    </div>
+
+
+SQLiTE FROM sULAIMAN
+
+https://gist.github.com/7aman/23678d233fa50900cc70ebfef2fd1f94
+
+https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/
+
+https://www.geeksforgeeks.org/sql-ddl-dql-dml-dcl-tcl-commands/
+
+https://docs.python.org/3.12/library/sqlite3.html
+
+https://media.geeksforgeeks.org/wp-content/uploads/20210920153429/new.png
+
+    <!-- Work experience -->
+    <div class="experience">
+        <h2>Work Experience</h2>
+        <ul>
+            <li>
+                <strong>Maths and Science Educator</strong><br>
+                Limpopo Department of Education, 2015 - Present<br>
+                <em>Responsibilities:</em> Teaching Mathematics, Life and Natural Sciences in Grade 8 to 12</li>
+            <li>
+                <strong>Archnology Trainee</strong><br>
+                Agriculture Research Council, Jan 2010 to June 2011<br>
+                <em>Responsibilities:</em> Assisting with fieldwork and identificaion of spiders</li>
+        </ul>
+    </div>
+
+    <!-- Enquiry form -->
+    <div class="forms">
+        <h2>Search My CV</h2>
+        <form method="get" action="/search">
+            <div>
+                <label for="search">Search:</label>
+                <input type="text" id="search" name="search" placeholder="Enter keywords...">
+            </div>
+            <div>
+                <button type="submit">Search</button>
+            </div>
+        </form>
+
+        <h2>Contact Me</h2>
+        <form method="post" action="/submit-feedback">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
