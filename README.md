@@ -1,2 +1,140 @@
 # MyCVREADME
 Summarized version of my CV
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+        }
+        .social-media a {
+            display: inline-block;
+            margin: 10px 5px;
+            text-decoration: none;
+            color: #0077b5; /* LinkedIn Blue */
+        }
+    </style>
+</head>
+<body>
+    <!-- Short Bio -->
+    <div class="container">
+        <h1 class="display-4 text-center mb-4">About Me</h1>
+        <p class="lead text-center">
+            I'm Sebaks Seshothela, an aspiring software developer. I've been working as a high school teacher 
+            for the past 10 years and got interested in tech after seeing the opportunities it offers.
+        </p>
+        <p class="text-center">
+            I plan to use my tech skills in education to address daily challenges. Tech scalability will allow 
+            me to reach learners across South Africa.
+        </p>
+        <p class="text-center">
+            I'm also very active on TikTok with about 18k followers across three accounts, allowing me to connect 
+            with learners and people from diverse backgrounds.
+        </p>
+
+        <!-- Contact Details -->
+        <div class="contact-info mt-5">
+            <h2>Contact Details</h2>
+            <p><strong>Name:</strong> Sebaks Seshothela</p>
+            <p><strong>Contact Number:</strong> +27 60 362 4899</p>
+            <p><strong>Email Address:</strong> <a href="mailto:sebaks992@gmail.com">sebaks992@gmail.com</a></p>
+            <div class="social-media">
+                <a href="https://www.tiktok.com/mnronline" target="_blank" class="btn btn-info text-white">
+                    Tiktok
+                </a>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills mt-5">
+            <h2>Skills and Competencies</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Proficient in Python, SQL, SQLite, HTML, and CSS</li>
+                <li class="list-group-item">Strong communication and presentation skills</li>
+                <li class="list-group-item">Experience with sales and customer service</li>
+                <li class="list-group-item">Effective problem-solving and debugging skills</li>
+            </ul>
+        </div>
+
+        <!-- Education -->
+        <div class="education mt-5">
+            <h2>Education</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Software Engineering Bootcamp</strong><br>
+                    HyperionDev, March 2024 - September 2024<br>
+                    Topics: Python, Data Structures, OOP, Django, Git
+                </li>
+                <li class="list-group-item">
+                    <strong>Bachelor of Science Honours in Aquaculture</strong><br>
+                    University of Limpopo, 2008 - 2009<br>
+                    Applied statistical analysis in research
+                </li>
+            </ul>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="experience mt-5">
+            <h2>Work Experience</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Maths and Science Educator</strong><br>
+                    Limpopo Department of Education, 2015 - Present<br>
+                    Teaching Mathematics, Life, and Natural Sciences (Grades 8-12)
+                </li>
+                <li class="list-group-item">
+                    <strong>Archnology Trainee</strong><br>
+                    Agriculture Research Council, Jan 2010 - June 2011<br>
+                    Assisting with fieldwork and spider identification
+                </li>
+            </ul>
+        </div>
+
+        <!-- Search and Contact Forms -->
+        <div class="forms mt-5">
+            <!-- Search Form -->
+            <h2>Search My CV</h2>
+            <form class="row g-3" method="get" action="/search">
+                <div class="col-md-8">
+                    <input type="text" class="form-control" id="search" name="search" placeholder="Enter keywords...">
+                </div>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary w-100">Search</button>
+                </div>
+            </form>
+
+            <!-- Contact Form -->
+            <h2 class="mt-5">Contact Me</h2>
+            <form class="row g-3" method="post" action="/submit-feedback">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success w-100">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
